@@ -1,145 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jared Serre | Journalist</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jared Serre | Journalist</title>
 
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-    <div class="container">
-        <h1>Jared Serre</h1>
-        <p>Journalist | Reporter | Storyteller</p>
-    </div>
-</header>
+<div class="layout">
 
-<section class="hero">
-    <div class="container hero-content">
-
-        <div class="hero-image">
-            <img src="images/headshot.jpg" alt="Jared Serre">
+    <!-- LEFT SIDEBAR -->
+    <aside class="sidebar">
+        <div class="brand">
+            <h1>Jared Serre</h1>
+            <p>Reporter • Journalist • Writer</p>
         </div>
 
-        <div class="hero-text">
-            <h2>About Me</h2>
+        <img src="images/headshot.jpg" class="portrait" alt="Headshot">
 
+        <div class="bio">
             <p>
-                I'm a journalist covering local government, education,
-                transportation, business, and community news.
-                My work focuses on finding compelling stories that matter
-                to readers and presenting them clearly and accurately.
+                I report on local government, development, transportation,
+                and the decisions shaping Northern Virginia communities.
             </p>
+        </div>
 
-            <div class="buttons">
-                <a href="mailto:jaredserre@gmail.com" class="btn">
-                    Email Me
+        <div class="contact">
+            <a href="mailto:jaredserre@gmail.com">Email</a>
+            <a href="https://twitter.com/JaredSerre">X</a>
+            <a href="https://linkedin.com/in/jared-serre">LinkedIn</a>
+        </div>
+
+        <div class="skills">
+            <h3>Skills</h3>
+
+            <button onclick="toggleSkill('reporting')">Reporting</button>
+            <button onclick="toggleSkill('investigations')">Investigations</button>
+            <button onclick="toggleSkill('data')">Data</button>
+            <button onclick="toggleSkill('breaking')">Breaking News</button>
+
+            <div id="skillBox">Click a skill.</div>
+        </div>
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="content">
+
+        <div class="masthead">
+            <h2>Featured Reporting</h2>
+            <p>Selected work and recent coverage</p>
+        </div>
+
+        <section class="grid">
+
+            <article class="card large">
+                <a href="https://example.com">
+                    <h3>Investigative Feature Title</h3>
+                    <p>
+                        Deep dive into zoning decisions and development pressure
+                        in Northern Virginia suburbs.
+                    </p>
+                    <span>Read story →</span>
                 </a>
+            </article>
 
-                <a href="https://twitter.com/JaredSerre" class="btn">
-                    X / Twitter
+            <article class="card">
+                <a href="https://example.com">
+                    <h3>Breaking: School Board Vote</h3>
+                    <p>Coverage of late-night education decision.</p>
                 </a>
+            </article>
 
-                <a href="https://linkedin.com/in/jared-serre" class="btn">
-                    LinkedIn
+            <article class="card">
+                <a href="clips/story.pdf">
+                    <h3>PDF Clip</h3>
+                    <p>Print layout sample article</p>
                 </a>
-            </div>
-        </div>
+            </article>
 
-    </div>
-</section>
+            <article class="card">
+                <a href="https://example.com">
+                    <h3>Transportation Report</h3>
+                    <p>Metro delays and commuter impact analysis</p>
+                </a>
+            </article>
 
-<section class="work">
-    <div class="container">
-        <h2>Featured Work</h2>
+        </section>
 
-        <div class="work-grid">
+        <footer>
+            <p>© 2026 Jared Serre — Built as a digital newsroom portfolio</p>
+        </footer>
 
-            <a href="https://example.com/article1" class="work-card">
-                <h3>Investigative Story</h3>
-                <p>
-                    Coverage of local government and public policy.
-                </p>
-            </a>
+    </main>
 
-            <a href="https://example.com/article2" class="work-card">
-                <h3>Breaking News</h3>
-                <p>
-                    Fast-paced reporting during a developing event.
-                </p>
-            </a>
-
-            <a href="clips/story1.pdf" class="work-card">
-                <h3>PDF Clip</h3>
-                <p>
-                    Download a published article sample.
-                </p>
-            </a>
-
-        </div>
-    </div>
-</section>
-
-<section class="skills">
-    <div class="container">
-
-        <h2>Skills</h2>
-
-        <div class="skills-grid">
-
-            <button class="skill-btn"
-                onclick="showInfo(
-                'Reporting',
-                'Experienced in breaking news, government, education, transportation, and enterprise reporting.'
-                )">
-                Reporting
-            </button>
-
-            <button class="skill-btn"
-                onclick="showInfo(
-                'Photography',
-                'Basic field photography and image editing experience.'
-                )">
-                Photography
-            </button>
-
-            <button class="skill-btn"
-                onclick="showInfo(
-                'Social Media',
-                'Audience engagement, live updates, and platform management.'
-                )">
-                Social Media
-            </button>
-
-            <button class="skill-btn"
-                onclick="showInfo(
-                'Data Journalism',
-                'Working with public records, spreadsheets, and data visualization.'
-                )">
-                Data Journalism
-            </button>
-
-        </div>
-
-        <div id="skill-info">
-            Click a skill to learn more.
-        </div>
-
-    </div>
-</section>
-
-<footer>
-    <div class="container">
-        <p>© 2026 Jared Serre</p>
-    </div>
-</footer>
+</div>
 
 <script>
-function showInfo(title, description) {
-    document.getElementById("skill-info").innerHTML =
-        "<h3>" + title + "</h3><p>" + description + "</p>";
+function toggleSkill(skill) {
+
+    const data = {
+        reporting: "Fast, accurate local reporting across government, schools, and community issues.",
+        investigations: "Long-form reporting, document analysis, and accountability journalism.",
+        data: "Public records, spreadsheets, and trend analysis for newsroom storytelling.",
+        breaking: "On-the-ground breaking news coverage with speed and precision."
+    };
+
+    document.getElementById("skillBox").innerText = data[skill];
 }
 </script>
 
