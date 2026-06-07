@@ -1,1 +1,262 @@
-<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Jared Serre | Journalist</title> <style> :root { --primary: #111827; --accent: #c0392b; --light: #f8fafc; --gray: #64748b; --border: #e2e8f0; } * { margin: 0; padding: 0; box-sizing: border-box; } body { font-family: Georgia, serif; line-height: 1.7; color: var(--primary); background: white; } .container { width: 90%; max-width: 1100px; margin: auto; } header { background: linear-gradient(135deg, #111827, #1f2937); color: white; padding: 120px 0; } .hero { display: flex; flex-direction: column; gap: 20px; } .hero h1 { font-size: 3.5rem; line-height: 1.1; } .hero p { font-size: 1.2rem; max-width: 700px; color: #d1d5db; } .btn { display: inline-block; background: var(--accent); color: white; padding: 14px 28px; text-decoration: none; border-radius: 5px; margin-top: 10px; transition: 0.3s; } .btn:hover { background: #a93226; } nav { position: sticky; top: 0; background: white; border-bottom: 1px solid var(--border); z-index: 100; } .nav-inner { display: flex; justify-content: space-between; align-items: center; padding: 18px 0; } .logo { font-weight: bold; font-size: 1.2rem; } nav ul { display: flex; list-style: none; gap: 25px; } nav a { text-decoration: none; color: var(--primary); font-weight: 500; } section { padding: 80px 0; } .section-title { font-size: 2rem; margin-bottom: 20px; } .about { display: grid; grid-template-columns: 1fr 2fr; gap: 40px; align-items: center; } .profile-photo { width: 100%; aspect-ratio: 1/1; background: #ddd; border-radius: 10px; } .article-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(300px,1fr)); gap: 25px; } .article-card { border: 1px solid var(--border); border-radius: 10px; overflow: hidden; transition: 0.3s; } .article-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.08); } .article-image { height: 200px; background: #dbeafe; } .article-content { padding: 20px; } .article-content h3 { margin-bottom: 10px; } .article-content p { color: var(--gray); margin-bottom: 15px; } .article-content a { color: var(--accent); text-decoration: none; font-weight: bold; } .skills { display: flex; flex-wrap: wrap; gap: 12px; } .skill { background: #f1f5f9; padding: 10px 18px; border-radius: 30px; } .contact { background: #f8fafc; text-align: center; border-radius: 12px; padding: 60px; } footer { text-align: center; padding: 30px; border-top: 1px solid var(--border); color: var(--gray); } @media (max-width: 768px) { .about { grid-template-columns: 1fr; } .hero h1 { font-size: 2.5rem; } nav ul { gap: 15px; } } </style> </head> <body> <header> <div class="container hero"> <span>Investigative Journalist • Reporter • Storyteller</span> <h1>Jared Serre</h1> <p> Covering politics, technology, and public accountability through in-depth reporting and compelling storytelling. </p> <a href="#work" class="btn">View My Work</a> </div> </header> <nav> <div class="container nav-inner"> <div class="logo">Jane Smith</div> <ul> <li><a href="#about">About</a></li> <li><a href="#work">Work</a></li> <li><a href="#expertise">Expertise</a></li> <li><a href="#contact">Contact</a></li> </ul> </div> </nav> <section id="about"> <div class="container"> <h2 class="section-title">About</h2> <div class="about"> <div class="profile-photo"></div> <div> <p> I'm an award-winning journalist with over 10 years of experience reporting on government, technology, and social issues. My work has appeared in national newspapers, magazines, and digital publications. </p> <br> <p> I focus on uncovering stories that matter, translating complex topics into accessible reporting, and holding institutions accountable through rigorous investigation. </p> </div> </div> </div> </section> <section id="work"> <div class="container"> <h2 class="section-title">Featured Stories</h2> <div class="article-grid"> <!-- Story 1 --> <a href="stories/housing-crisis.html" target="_blank" rel="noopener noreferrer" class="article-card-link"> <div class="article-card"> <div class="article-image"></div> <div class="article-content"> <h3>Inside the City's Housing Crisis</h3> <p> An investigative series examining policy failures, affordability challenges, and community impact. </p> <span class="read-more"> Read Story → </span> </div> </div> </a> <!-- Story 2 --> <a href="stories/ai-accountability.html" target="_blank" rel="noopener noreferrer" class="article-card-link"> <div class="article-card"> <div class="article-image"></div> <div class="article-content"> <h3>The AI Accountability Gap</h3> <p> Exploring how regulators and technology companies are navigating rapidly evolving AI systems. </p> <span class="read-more"> Read Story → </span> </div> </div> </a> <!-- Story 3 --> <a href="stories/campaign-finance.html" target="_blank" rel="noopener noreferrer" class="article-card-link"> <div class="article-card"> <div class="article-image"></div> <div class="article-content"> <h3>Following the Money</h3> <p> A deep dive into campaign finance records and political influence networks. </p> <span class="read-more"> Read Story → </span> </div> </div> </a> </div> </div> </section> <section id="expertise"> <div class="container"> <h2 class="section-title">Areas of Expertise</h2> <div class="skills"> <div class="skill">Investigative Reporting</div> <div class="skill">Political Journalism</div> <div class="skill">Technology Reporting</div> <div class="skill">Data Journalism</div> <div class="skill">Long-form Features</div> <div class="skill">Interviewing</div> <div class="skill">Fact Checking</div> <div class="skill">Multimedia Storytelling</div> </div> </div> </section> <section id="contact"> <div class="container"> <div class="contact"> <h2 class="section-title">Let's Connect</h2> <p> Available for freelance assignments, speaking engagements, collaborations, and media inquiries. </p> <br> <p> Email: jaredserre@gmail.com<br> LinkedIn: linkedin.com/in/jared-serre<br> X / Twitter: @JaredSerre </p> <br> <a href="mailto:jaredserre@gmail.com" class="btn"> Get In Touch </a> </div> </div> </section> <footer> © 2026 Jared Serre. All Rights Reserved. </footer> </body> </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jared Serre | Journalist</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container hero">
+        <span class="eyebrow">Journalist • Storyteller • Community Reporter</span>
+
+        <h1>Jared Serre</h1>
+
+        <p>
+            Covering Northern Virginia through reporting on local government,
+            development, transportation, public safety, and the people shaping
+            our communities.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#work" class="btn">View My Work</a>
+            <a href="mailto:jaredserre@gmail.com" class="btn btn-outline">
+                Contact Me
+            </a>
+        </div>
+    </div>
+</header>
+
+<nav>
+    <div class="container nav-inner">
+        <div class="logo">JS</div>
+
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#expertise">Expertise</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section id="about">
+    <div class="container">
+
+        <h2 class="section-title">About</h2>
+
+        <div class="about">
+
+            <img
+                src="images/headshot.jpg"
+                alt="Jared Serre"
+                class="profile-photo">
+
+            <div>
+
+                <p>
+                    I'm a journalist focused on local news, government,
+                    development, transportation, and public accountability.
+                    My reporting aims to explain complex issues clearly while
+                    highlighting the stories that matter most to the communities
+                    I cover.
+                </p>
+
+                <br>
+
+                <p>
+                    Over the years I've covered everything from major
+                    development projects and local elections to transportation
+                    initiatives and breaking news, always with a commitment to
+                    accuracy, context, and strong storytelling.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section id="work">
+
+    <div class="container">
+
+        <h2 class="section-title">Featured Work</h2>
+
+        <div class="article-grid">
+
+            <a href="#" class="article-card">
+                <div class="article-image"></div>
+
+                <div class="article-content">
+                    <h3>Featured Story One</h3>
+
+                    <p>
+                        Replace this with a short description of one of your
+                        strongest stories.
+                    </p>
+
+                    <span>Read Story →</span>
+                </div>
+            </a>
+
+            <a href="#" class="article-card">
+                <div class="article-image"></div>
+
+                <div class="article-content">
+                    <h3>Featured Story Two</h3>
+
+                    <p>
+                        Add another article, investigation, or profile piece.
+                    </p>
+
+                    <span>Read Story →</span>
+                </div>
+            </a>
+
+            <a href="#" class="article-card">
+                <div class="article-image"></div>
+
+                <div class="article-content">
+                    <h3>Featured Story Three</h3>
+
+                    <p>
+                        Highlight your best reporting work here.
+                    </p>
+
+                    <span>Read Story →</span>
+                </div>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="expertise">
+
+    <div class="container">
+
+        <h2 class="section-title">Areas of Expertise</h2>
+
+        <div class="skills">
+
+            <button class="skill" onclick="showSkill('government')">
+                Local Government
+            </button>
+
+            <button class="skill" onclick="showSkill('development')">
+                Development
+            </button>
+
+            <button class="skill" onclick="showSkill('transportation')">
+                Transportation
+            </button>
+
+            <button class="skill" onclick="showSkill('breaking')">
+                Breaking News
+            </button>
+
+            <button class="skill" onclick="showSkill('features')">
+                Feature Writing
+            </button>
+
+            <button class="skill" onclick="showSkill('multimedia')">
+                Multimedia
+            </button>
+
+        </div>
+
+        <div id="skill-info" class="skill-info">
+            Click a topic above to learn more.
+        </div>
+
+    </div>
+
+</section>
+
+<section id="contact">
+
+    <div class="container">
+
+        <div class="contact">
+
+            <h2 class="section-title">Let's Connect</h2>
+
+            <p>
+                Available for freelance assignments, collaborations,
+                speaking engagements, and media inquiries.
+            </p>
+
+            <div class="social-links">
+
+                <a href="mailto:jaredserre@gmail.com" class="btn">
+                    Email
+                </a>
+
+                <a href="https://linkedin.com/in/jared-serre"
+                   target="_blank"
+                   class="btn">
+                    LinkedIn
+                </a>
+
+                <a href="https://x.com/JaredSerre"
+                   target="_blank"
+                   class="btn">
+                    X
+                </a>
+
+                <a href="https://github.com"
+                   target="_blank"
+                   class="btn">
+                    GitHub
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Jared Serre. All Rights Reserved.
+</footer>
+
+<script>
+
+const skills = {
+
+government:
+"Coverage of local government, county boards, city councils, elections, schools, and public policy.",
+
+development:
+"Reporting on housing, commercial projects, rezonings, planning commissions, and economic development.",
+
+transportation:
+"Coverage of transit, road projects, infrastructure investments, traffic issues, and mobility trends.",
+
+breaking:
+"Fast-moving reporting on major community events, public safety incidents, and urgent developments.",
+
+features:
+"Long-form storytelling focused on people, trends, businesses, and community impact.",
+
+multimedia:
+"Photography, social media, audience engagement, and digital-first storytelling."
+
+};
+
+function showSkill(skill) {
+    document.getElementById("skill-info").innerHTML = skills[skill];
+}
+
+</script>
+
+</body>
+</html>
