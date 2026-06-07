@@ -248,3 +248,17 @@ footer{
   border-left:4px solid var(--red);
   padding-left:10px;
 }
+
+.card-img{
+  width:100%;
+  height:160px;
+  object-fit:cover;
+  border-radius:10px;
+  margin-bottom:12px;
+  border:1px solid var(--border);
+  transition:0.3s ease;
+}
+
+.card:hover .card-img{
+  transform: scale(1.02);
+}
