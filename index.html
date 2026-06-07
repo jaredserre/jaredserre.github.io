@@ -1,169 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Your Name | Journalist</title>
-
-<link rel="stylesheet" href="style.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Your Name | Journalist Portfolio</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-<header class="topbar">
-    <div class="container">
-        <h1>Your Name</h1>
-
-        <div>
-            <nav>
-                <a href="#about">About</a>
-                <a href="#work">Stories</a>
-                <a href="#skills">Skills</a>
-                <a href="#contact">Contact</a>
-            </nav>
-
-            <button id="themeToggle" class="theme-toggle">Dark mode</button>
-        </div>
-    </div>
+<!-- NAV -->
+<header class="nav">
+  <div class="logo">YOUR NAME</div>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#work">Featured Work</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
-<!-- HERO / ABOUT -->
-<section id="about" class="hero">
-    <div class="container hero-grid">
-
-        <img src="images/headshot.jpg" alt="Headshot" class="headshot">
-
-        <div>
-            <h2>Journalist covering local government, development & community impact</h2>
-
-            <p>
-                I’m a reporter focused on accountability journalism in Northern Virginia,
-                covering the decisions shaping housing, transportation, education, and public policy.
-                My work blends breaking news with deeper investigative reporting.
-            </p>
-
-            <div class="cta">
-                <a href="mailto:you@email.com" class="btn">Email</a>
-                <a href="https://twitter.com/yourhandle" class="btn">X</a>
-                <a href="https://linkedin.com" class="btn">LinkedIn</a>
-            </div>
-        </div>
-
-    </div>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Journalism that cuts through noise.</h1>
+    <p>Investigative reporting • Feature writing • Field storytelling</p>
+    <a href="#work" class="btn-red">View Featured Work</a>
+  </div>
 </section>
 
-<!-- WORK -->
+<!-- ABOUT -->
+<section id="about" class="section gray">
+  <div class="container split">
+    <div>
+      <h2>About Me</h2>
+      <p>
+        I’m a journalist focused on long-form storytelling, investigative reporting,
+        and human-centered narratives. My work explores politics, culture, and
+        the systems that shape everyday life.
+      </p>
+    </div>
+    <div class="quote-box">
+      “Good journalism is a map through confusion.”
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED WORK -->
 <section id="work" class="section">
-    <div class="container">
+  <div class="container">
+    <h2>Featured Work</h2>
 
-        <h2>Selected Stories</h2>
+    <div class="grid">
 
-        <div class="stories">
+      <a class="card red" href="article.html">
+        <h3>Investigating Housing Inequality</h3>
+        <p>A deep dive into displacement patterns in urban America.</p>
+      </a>
 
-            <div class="story-card">
-                <h3>School Board Budget Clash Shapes County Priorities</h3>
-                <p>
-                    Coverage of late-night negotiations over education funding and staffing cuts.
-                </p>
-                <a href="story-1.html" class="read-more">Read more →</a>
-            </div>
+      <a class="card blue" href="article.html">
+        <h3>The Future of Local News</h3>
+        <p>What happens when small newsrooms disappear?</p>
+      </a>
 
-            <div class="story-card">
-                <h3>Rezoning Proposal Sparks Community Debate</h3>
-                <p>
-                    Residents and developers clash over a major mixed-use development plan.
-                </p>
-                <a href="story-2.html" class="read-more">Read more →</a>
-            </div>
-
-            <div class="story-card">
-                <h3>Metro Delays Raise Questions About Regional Transit Reliability</h3>
-                <p>
-                    A look at commuter frustrations and system performance trends.
-                </p>
-                <a href="story-3.html" class="read-more">Read more →</a>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<!-- SKILLS -->
-<section id="skills" class="section alt">
-    <div class="container">
-
-        <h2>Skills</h2>
-
-        <div class="skills">
-
-            <button onclick="toggleSkill('reporting')">Reporting</button>
-            <button onclick="toggleSkill('investigations')">Investigative Work</button>
-            <button onclick="toggleSkill('data')">Data Journalism</button>
-            <button onclick="toggleSkill('breaking')">Breaking News</button>
-
-        </div>
-
-        <div id="skill-box">
-            Click a skill to learn more.
-        </div>
+      <a class="card gray" href="article.html">
+        <h3>On the Ground: Election Coverage</h3>
+        <p>Field reporting from swing districts.</p>
+      </a>
 
     </div>
+  </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="section">
-    <div class="container contact">
-
-        <h2>Contact</h2>
-
-        <p>
-            Want to collaborate or send a tip? Reach out anytime.
-        </p>
-
-        <a class="btn" href="mailto:you@email.com">Email Me</a>
-
-    </div>
+<section id="contact" class="section gray">
+  <div class="container">
+    <h2>Contact</h2>
+    <p>Email: yourname@email.com</p>
+    <p>Twitter / X: @yourhandle</p>
+  </div>
 </section>
 
 <footer>
-    <div class="container">
-        <p>© 2026 Your Name — Journalist Portfolio</p>
-    </div>
+  <p>© 2026 Your Name. Built for GitHub Pages.</p>
 </footer>
 
-<script>
-function toggleSkill(skill) {
-
-    const info = {
-        reporting: "Daily reporting across government, schools, and community issues.",
-        investigations: "Long-form accountability journalism using documents and interviews.",
-        data: "Public records analysis, spreadsheets, and trend reporting.",
-        breaking: "Fast, accurate breaking news under tight deadlines."
-    };
-
-    document.getElementById("skill-box").innerText = info[skill];
-}
-</script>
-
+<script src="script.js"></script>
 </body>
-<script>
-const toggleBtn = document.getElementById("themeToggle");
-
-// load saved preference
-if (localStorage.getItem("theme") === "dark") {
-    document.body.classList.add("dark");
-    toggleBtn.textContent = "Light mode";
-}
-
-// toggle behavior
-toggleBtn.addEventListener("click", () => {
-    document.body.classList.toggle("dark");
-
-    const isDark = document.body.classList.contains("dark");
-
-    toggleBtn.textContent = isDark ? "Light mode" : "Dark mode";
-
-    localStorage.setItem("theme", isDark ? "dark" : "light");
-});
-</script>    
 </html>
