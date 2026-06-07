@@ -3,88 +3,95 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Your Name | Journalism Portfolio</title>
+  <title>Journalist Portfolio</title>
   <link rel="stylesheet" href="styles.css"/>
 </head>
-
 <body>
 
-<header>
-  <nav>
-    <div class="logo">YourName</div>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#work">Work</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <!-- NAV -->
+  <header class="nav">
+    <div class="nav-inner">
+      <div class="logo">Your Name</div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-  <div class="hero">
-  <div class="container">
-    <h1>Stories that matter, told with clarity.</h1>
-    <p>Journalist • Writer • Storyteller</p>
-    <a href="#work" class="btn">View My Work</a>
-  </div>
-</div>
-</header>
-
-<section id="about" class="section">
-  <div class="container">
-    <h2>About Me</h2>
-
-    <div class="about-container">
-      <img src="assets/headshot.jpg" alt="Headshot">
-      <p>
-        I’m a journalist focused on telling human-centered stories that explore culture, politics, and everyday life.
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <h1>Your Name</h1>
+      <p class="role">Journalist & Writer</p>
+      <p class="tagline">
+        Reporting stories that sit at the intersection of people, policy, and culture.
       </p>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="work" class="section dark">
-  <div class="container">
-    <h2>Featured Work</h2>
-
-    <div class="grid">
-    
-    <div class="card">
-      <h3>Story Title One</h3>
-      <p>A short preview of the article goes here to hook the reader.</p>
-      <a href="articles/article1.html">Read More →</a>
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container about">
+      <img src="https://via.placeholder.com/220" alt="Portrait" class="avatar"/>
+      <div>
+        <h2>About</h2>
+        <p>
+          I’m a journalist focused on long-form reporting, cultural analysis, and human-centered storytelling.
+          My work has appeared in digital publications and independent outlets, covering topics ranging from
+          urban policy to creative communities.
+        </p>
+      </div>
     </div>
+  </section>
 
-    <div class="card">
-      <h3>Story Title Two</h3>
-      <p>A compelling summary of another investigative or feature piece.</p>
-      <a href="articles/article2.html">Read More →</a>
+  <!-- WORK -->
+  <section id="work" class="section">
+    <div class="container">
+      <h2>Featured Work</h2>
+
+      <div class="grid">
+
+        <a class="card" href="article-1.html">
+          <h3>City Systems and Invisible Infrastructure</h3>
+          <p>How urban design quietly shapes daily life in modern cities.</p>
+        </a>
+
+        <a class="card" href="article-2.html">
+          <h3>The Changing Nature of Local Journalism</h3>
+          <p>What happens when communities lose their local newsroom.</p>
+        </a>
+
+        <a class="card" href="article-3.html">
+          <h3>Culture in the Age of Constant Publishing</h3>
+          <p>On attention, speed, and the pressure to produce.</p>
+        </a>
+
+      </div>
     </div>
+  </section>
 
-    <div class="card">
-      <h3>Story Title Three</h3>
-      <p>A third story preview that shows range and depth.</p>
-      <a href="articles/article3.html">Read More →</a>
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact</h2>
+      <p class="contact-text">
+        Want to work together or pitch a story?
+      </p>
+
+      <div class="contact-links">
+        <a href="mailto:you@email.com">you@email.com</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">X (Twitter)</a>
+      </div>
     </div>
+  </section>
 
-    </div>
-  </div>
-</section>
+  <footer>
+    <p>© <span id="year"></span> Your Name</p>
+  </footer>
 
-<section id="contact" class="section">
-  <h2>Contact</h2>
-  <p>Let’s connect and collaborate.</p>
-
-  <div class="contact-links">
-    <a href="mailto:youremail@example.com">Email Me</a>
-    <a href="https://twitter.com/yourhandle" target="_blank">Twitter</a>
-    <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
-    <a href="https://instagram.com/yourhandle" target="_blank">Instagram</a>
-  </div>
-</section>
-
-<footer>
-  <p>© 2026 Your Name. All rights reserved.</p>
-</footer>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
