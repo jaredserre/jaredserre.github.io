@@ -151,3 +151,46 @@ footer {
   padding: 30px;
   opacity: 0.6;
 }
+/* ARTICLE PAGE HERO */
+.article-hero {
+  padding: 60px 60px 20px 60px;
+  text-align: center;
+}
+
+.article-hero h1 {
+  font-size: 2.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.meta {
+  margin-top: 10px;
+  opacity: 0.6;
+  font-size: 0.9rem;
+}
+
+/* ARTICLE BODY */
+.article-content {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.lead {
+  font-size: 1.2rem;
+  opacity: 0.95;
+  margin-bottom: 20px;
+}
+
+.article-content p {
+  margin-bottom: 18px;
+  line-height: 1.8;
+}
+
+/* QUOTES */
+blockquote {
+  margin: 30px 0;
+  padding-left: 20px;
+  border-left: 3px solid #4f7cff;
+  opacity: 0.9;
+  font-style: italic;
+}
