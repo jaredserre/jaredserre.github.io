@@ -4,94 +4,89 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Journalist Portfolio</title>
-  <link rel="stylesheet" href="styles.css"/>
+
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
 
-  <!-- NAV -->
-  <header class="nav">
-    <div class="nav-inner">
-      <div class="logo">Your Name</div>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#work">Work</a>
-        <a href="#contact">Contact</a>
-      </nav>
+<!-- NAV -->
+<nav>
+  <div class="nav-container">
+    <div class="logo">Your Name</div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
     </div>
-  </header>
+  </div>
+</nav>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-inner">
-      <h1>Your Name</h1>
-      <p class="role">Journalist & Writer</p>
-      <p class="tagline">
-        Reporting stories that sit at the intersection of people, policy, and culture.
-      </p>
+<!-- HERO -->
+<header id="about" class="fade-in">
+  <img class="headshot" src="https://via.placeholder.com/150" alt="Headshot">
+  <h1>Your Name</h1>
+  <p class="tagline">Journalist • Storyteller • Reporter of modern events and culture</p>
+</header>
+
+<!-- WORK -->
+<section id="work">
+  <h2 class="section-title">Featured Work</h2>
+
+  <div class="work-grid">
+
+    <div class="card">
+      <h3>Article Title One</h3>
+      <p>Short description of the story and what it covers.</p>
+      <a href="#" target="_blank">Read more →</a>
     </div>
-  </section>
 
-  <!-- ABOUT -->
-  <section id="about" class="section">
-    <div class="container about">
-      <img src="https://via.placeholder.com/220" alt="Portrait" class="avatar"/>
-      <div>
-        <h2>About</h2>
-        <p>
-          I’m a journalist focused on long-form reporting, cultural analysis, and human-centered storytelling.
-          My work has appeared in digital publications and independent outlets, covering topics ranging from
-          urban policy to creative communities.
-        </p>
-      </div>
+    <div class="card">
+      <h3>Article Title Two</h3>
+      <p>Short investigative or feature story description.</p>
+      <a href="#" target="_blank">Read more →</a>
     </div>
-  </section>
 
-  <!-- WORK -->
-  <section id="work" class="section">
-    <div class="container">
-      <h2>Featured Work</h2>
-
-      <div class="grid">
-
-        <a class="card" href="article-1.html">
-          <h3>City Systems and Invisible Infrastructure</h3>
-          <p>How urban design quietly shapes daily life in modern cities.</p>
-        </a>
-
-        <a class="card" href="article-2.html">
-          <h3>The Changing Nature of Local Journalism</h3>
-          <p>What happens when communities lose their local newsroom.</p>
-        </a>
-
-        <a class="card" href="article-3.html">
-          <h3>Culture in the Age of Constant Publishing</h3>
-          <p>On attention, speed, and the pressure to produce.</p>
-        </a>
-
-      </div>
+    <div class="card">
+      <h3>Article Title Three</h3>
+      <p>Short reporting or interview-based piece.</p>
+      <a href="#" target="_blank">Read more →</a>
     </div>
-  </section>
 
-  <!-- CONTACT -->
-  <section id="contact" class="section">
-    <div class="container">
-      <h2>Contact</h2>
-      <p class="contact-text">
-        Want to work together or pitch a story?
-      </p>
+  </div>
+</section>
 
-      <div class="contact-links">
-        <a href="mailto:you@email.com">you@email.com</a>
-        <a href="#">LinkedIn</a>
-        <a href="#">X (Twitter)</a>
-      </div>
-    </div>
-  </section>
+<!-- SKILLS -->
+<section id="skills">
+  <h2 class="section-title">Skills</h2>
 
-  <footer>
-    <p>© <span id="year"></span> Your Name</p>
-  </footer>
+  <div class="skills">
+    <div class="skill" onclick="showSkill('writing')">Writing</div>
+    <div class="skill" onclick="showSkill('interview')">Interviewing</div>
+    <div class="skill" onclick="showSkill('investigative')">Investigative Reporting</div>
+    <div class="skill" onclick="showSkill('editing')">Editing</div>
+    <div class="skill" onclick="showSkill('multimedia')">Multimedia</div>
+  </div>
 
-  <script src="script.js"></script>
+  <div id="skill-info" class="skill-info"></div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2 class="section-title">Contact</h2>
+
+  <div class="contact-box">
+    <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+    <p>Twitter: <a href="#">@yourhandle</a></p>
+    <p>LinkedIn: <a href="#">linkedin.com/in/yourprofile</a></p>
+  </div>
+</section>
+
+<footer>
+  © 2026 Your Name — All rights reserved
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
