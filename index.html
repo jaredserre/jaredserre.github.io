@@ -1,87 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Your Name | Journalist Portfolio</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Name | Journalism Portfolio</title>
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 
 <body>
 
-<!-- NAV -->
-<header class="nav">
-  <div class="logo">YOUR NAME</div>
+<header>
   <nav>
-    <a href="#about">About</a>
-    <a href="#work">Featured Work</a>
-    <a href="#contact">Contact</a>
+    <div class="logo">YourName</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
   </nav>
+
+  <div class="hero">
+    <h1>Stories that matter, told with clarity.</h1>
+    <p>Journalist • Writer • Storyteller</p>
+    <a href="#work" class="btn">View My Work</a>
+  </div>
 </header>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-content">
-    <h1>Journalism that cuts through noise.</h1>
-    <p>Investigative reporting • Feature writing • Field storytelling</p>
-    <a href="#work" class="btn-red">View Featured Work</a>
+<section id="about" class="section">
+  <h2>About Me</h2>
+  <div class="about-container">
+    <img src="assets/headshot.jpg" alt="Headshot">
+    <p>
+      I’m a journalist focused on telling human-centered stories that explore culture, politics, and everyday life.
+      My work aims to bring clarity, curiosity, and depth to complex issues.
+    </p>
   </div>
 </section>
 
-<!-- ABOUT -->
-<section id="about" class="section gray">
-  <div class="container split">
-    <div>
-      <h2>About Me</h2>
-      <p>
-        I’m a journalist focused on long-form storytelling, investigative reporting,
-        and human-centered narratives. My work explores politics, culture, and
-        the systems that shape everyday life.
-      </p>
+<section id="work" class="section dark">
+  <h2>Featured Work</h2>
+
+  <div class="grid">
+    
+    <div class="card">
+      <h3>Story Title One</h3>
+      <p>A short preview of the article goes here to hook the reader.</p>
+      <a href="articles/article1.html">Read More →</a>
     </div>
-    <div class="quote-box">
-      “Good journalism is a map through confusion.”
+
+    <div class="card">
+      <h3>Story Title Two</h3>
+      <p>A compelling summary of another investigative or feature piece.</p>
+      <a href="articles/article2.html">Read More →</a>
     </div>
+
+    <div class="card">
+      <h3>Story Title Three</h3>
+      <p>A third story preview that shows range and depth.</p>
+      <a href="articles/article3.html">Read More →</a>
+    </div>
+
   </div>
 </section>
 
-<!-- FEATURED WORK -->
-<section id="work" class="section">
-  <div class="container">
-    <h2>Featured Work</h2>
+<section id="contact" class="section">
+  <h2>Contact</h2>
+  <p>Let’s connect and collaborate.</p>
 
-    <div class="grid">
-
-      <a class="card red" href="article.html">
-        <h3>Investigating Housing Inequality</h3>
-        <p>A deep dive into displacement patterns in urban America.</p>
-      </a>
-
-      <a class="card blue" href="article.html">
-        <h3>The Future of Local News</h3>
-        <p>What happens when small newsrooms disappear?</p>
-      </a>
-
-      <a class="card gray" href="article.html">
-        <h3>On the Ground: Election Coverage</h3>
-        <p>Field reporting from swing districts.</p>
-      </a>
-
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="section gray">
-  <div class="container">
-    <h2>Contact</h2>
-    <p>Email: yourname@email.com</p>
-    <p>Twitter / X: @yourhandle</p>
+  <div class="contact-links">
+    <a href="mailto:youremail@example.com">Email Me</a>
+    <a href="https://twitter.com/yourhandle" target="_blank">Twitter</a>
+    <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+    <a href="https://instagram.com/yourhandle" target="_blank">Instagram</a>
   </div>
 </section>
 
 <footer>
-  <p>© 2026 Your Name. Built for GitHub Pages.</p>
+  <p>© 2026 Your Name. All rights reserved.</p>
 </footer>
 
 <script src="script.js"></script>
