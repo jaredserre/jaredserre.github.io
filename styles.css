@@ -116,14 +116,17 @@ h2 {
 }
 
 .card {
-  background: #1e2333;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   padding: 20px;
-  border-radius: 12px;
-  transition: 0.3s;
+  border-radius: 14px;
+  transition: 0.25s ease;
+  backdrop-filter: blur(6px);
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-4px);
+  border-color: rgba(79, 124, 255, 0.4);
 }
 
 .card a {
