@@ -262,3 +262,11 @@ footer{
 .card:hover .card-img{
   transform: scale(1.02);
 }
+
+.card-img {
+  width: 100%;
+  height: 180px;   /* controls visual consistency */
+  object-fit: cover; /* THIS is what makes it behave correctly */
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
