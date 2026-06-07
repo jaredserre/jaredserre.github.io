@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jared Serre | Journalist</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>Jared Serre</h1>
+        <p>Journalist | Reporter | Storyteller</p>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container hero-content">
+
+        <div class="hero-image">
+            <img src="images/headshot.jpg" alt="Jared Serre">
+        </div>
+
+        <div class="hero-text">
+            <h2>About Me</h2>
+
+            <p>
+                I'm a journalist covering local government, education,
+                transportation, business, and community news.
+                My work focuses on finding compelling stories that matter
+                to readers and presenting them clearly and accurately.
+            </p>
+
+            <div class="buttons">
+                <a href="mailto:jaredserre@gmail.com" class="btn">
+                    Email Me
+                </a>
+
+                <a href="https://twitter.com/JaredSerre" class="btn">
+                    X / Twitter
+                </a>
+
+                <a href="https://linkedin.com/in/jared-serre" class="btn">
+                    LinkedIn
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="work">
+    <div class="container">
+        <h2>Featured Work</h2>
+
+        <div class="work-grid">
+
+            <a href="https://example.com/article1" class="work-card">
+                <h3>Investigative Story</h3>
+                <p>
+                    Coverage of local government and public policy.
+                </p>
+            </a>
+
+            <a href="https://example.com/article2" class="work-card">
+                <h3>Breaking News</h3>
+                <p>
+                    Fast-paced reporting during a developing event.
+                </p>
+            </a>
+
+            <a href="clips/story1.pdf" class="work-card">
+                <h3>PDF Clip</h3>
+                <p>
+                    Download a published article sample.
+                </p>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+<section class="skills">
+    <div class="container">
+
+        <h2>Skills</h2>
+
+        <div class="skills-grid">
+
+            <button class="skill-btn"
+                onclick="showInfo(
+                'Reporting',
+                'Experienced in breaking news, government, education, transportation, and enterprise reporting.'
+                )">
+                Reporting
+            </button>
+
+            <button class="skill-btn"
+                onclick="showInfo(
+                'Photography',
+                'Basic field photography and image editing experience.'
+                )">
+                Photography
+            </button>
+
+            <button class="skill-btn"
+                onclick="showInfo(
+                'Social Media',
+                'Audience engagement, live updates, and platform management.'
+                )">
+                Social Media
+            </button>
+
+            <button class="skill-btn"
+                onclick="showInfo(
+                'Data Journalism',
+                'Working with public records, spreadsheets, and data visualization.'
+                )">
+                Data Journalism
+            </button>
+
+        </div>
+
+        <div id="skill-info">
+            Click a skill to learn more.
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>© 2026 Jared Serre</p>
+    </div>
+</footer>
+
+<script>
+function showInfo(title, description) {
+    document.getElementById("skill-info").innerHTML =
+        "<h3>" + title + "</h3><p>" + description + "</p>";
+}
+</script>
+
+</body>
+</html>
