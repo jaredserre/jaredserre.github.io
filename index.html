@@ -7,10 +7,10 @@
 
 <style>
 :root {
-    --primary: #002855;
-    --accent: #eeaa00;
-    --light: #f7f7f7;
-    --gray: #988e8b;
+    --primary: #111827;
+    --accent: #c0392b;
+    --light: #f8fafc;
+    --gray: #64748b;
     --border: #e2e8f0;
 }
 
@@ -34,8 +34,8 @@ body {
 }
 
 header {
-    background: linear-gradient(135deg, #002855, #1f2937);
-    color: #f7f7f7;
+    background: linear-gradient(135deg, #111827, #1f2937);
+    color: white;
     padding: 120px 0;
 }
 
@@ -68,7 +68,7 @@ header {
 }
 
 .btn:hover {
-    background: #eeaa00;
+    background: #a93226;
 }
 
 nav {
@@ -226,7 +226,7 @@ footer {
 
 <nav>
     <div class="container nav-inner">
-        <div class="logo">Jared Serre</div>
+        <div class="logo">Jane Smith</div>
         <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#work">Work</a></li>
@@ -269,41 +269,77 @@ footer {
 
         <div class="article-grid">
 
-            <div class="article-card">
-                <div class="article-image"></div>
-                <div class="article-content">
-                    <h3>Inside the City's Housing Crisis</h3>
-                    <p>
-                        An investigative series examining policy failures,
-                        affordability challenges, and community impact.
-                    </p>
-                    <a href="#">Read Story →</a>
-                </div>
-            </div>
+            <!-- Story 1 -->
+            <a href="stories/housing-crisis.html"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="article-card-link">
 
-            <div class="article-card">
-                <div class="article-image"></div>
-                <div class="article-content">
-                    <h3>The AI Accountability Gap</h3>
-                    <p>
-                        Exploring how regulators and technology companies are
-                        navigating rapidly evolving AI systems.
-                    </p>
-                    <a href="#">Read Story →</a>
-                </div>
-            </div>
+                <div class="article-card">
+                    <div class="article-image"></div>
 
-            <div class="article-card">
-                <div class="article-image"></div>
-                <div class="article-content">
-                    <h3>Following the Money</h3>
-                    <p>
-                        A deep dive into campaign finance records and political
-                        influence networks.
-                    </p>
-                    <a href="#">Read Story →</a>
+                    <div class="article-content">
+                        <h3>Inside the City's Housing Crisis</h3>
+
+                        <p>
+                            An investigative series examining policy failures,
+                            affordability challenges, and community impact.
+                        </p>
+
+                        <span class="read-more">
+                            Read Story →
+                        </span>
+                    </div>
                 </div>
-            </div>
+            </a>
+
+            <!-- Story 2 -->
+            <a href="stories/ai-accountability.html"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="article-card-link">
+
+                <div class="article-card">
+                    <div class="article-image"></div>
+
+                    <div class="article-content">
+                        <h3>The AI Accountability Gap</h3>
+
+                        <p>
+                            Exploring how regulators and technology companies
+                            are navigating rapidly evolving AI systems.
+                        </p>
+
+                        <span class="read-more">
+                            Read Story →
+                        </span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Story 3 -->
+            <a href="stories/campaign-finance.html"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="article-card-link">
+
+                <div class="article-card">
+                    <div class="article-image"></div>
+
+                    <div class="article-content">
+                        <h3>Following the Money</h3>
+
+                        <p>
+                            A deep dive into campaign finance records and
+                            political influence networks.
+                        </p>
+
+                        <span class="read-more">
+                            Read Story →
+                        </span>
+                    </div>
+                </div>
+            </a>
 
         </div>
     </div>
@@ -340,7 +376,7 @@ footer {
 
             <p>
                 Email: jaredserre@gmail.com<br>
-                LinkedIn: linkedin.com/in/jared-serre/<br>
+                LinkedIn: linkedin.com/in/jared-serre<br>
                 X / Twitter: @JaredSerre
             </p>
 
