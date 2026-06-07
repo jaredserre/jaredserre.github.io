@@ -270,3 +270,50 @@ footer{
   border-radius: 10px;
   margin-bottom: 12px;
 }
+.contact-box{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  background:white;
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:20px;
+}
+
+/* Base button style */
+.contact-btn{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:10px 14px;
+  border-radius:10px;
+  text-decoration:none;
+  font-size:14px;
+  font-weight:500;
+  border:1px solid var(--border);
+  transition:0.25s ease;
+  background:white;
+  color:var(--text);
+}
+
+/* Hover effect */
+.contact-btn:hover{
+  transform:translateY(-2px);
+  border-color:var(--blue);
+}
+
+/* Specific accents */
+.contact-btn.email:hover{
+  border-color:var(--red);
+  color:var(--red);
+}
+
+.contact-btn.twitter:hover{
+  border-color:var(--blue);
+  color:var(--blue);
+}
+
+.contact-btn.linkedin:hover{
+  border-color:#0a66c2;
+  color:#0a66c2;
+}
