@@ -211,3 +211,40 @@ footer{
     transform:translateY(0);
   }
 }
+
+/* =========================
+   ARTICLE PAGES
+========================= */
+
+.article-page{
+  max-width:800px;
+  margin:120px auto 60px;
+  padding:0 20px;
+}
+
+.article-header{
+  margin-bottom:30px;
+}
+
+.article-header h1{
+  font-size:36px;
+  margin-bottom:10px;
+}
+
+.article-meta{
+  color:var(--muted);
+  font-size:14px;
+}
+
+.article-content p{
+  margin-bottom:18px;
+  font-size:17px;
+  line-height:1.8;
+}
+
+.article-content h2{
+  margin:30px 0 10px;
+  font-size:22px;
+  border-left:4px solid var(--red);
+  padding-left:10px;
+}
