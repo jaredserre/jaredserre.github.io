@@ -493,3 +493,16 @@ footer{
 .why-newsrooms-hire-me p {
   color: #d9e2f1;
 }
+
+#why-newsrooms-hire-me .value-card {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+#why-newsrooms-hire-me .value-card h3 {
+  color: #ffffff;
+}
+
+#why-newsrooms-hire-me .value-icon {
+  color: #d9e2f1;
+}
