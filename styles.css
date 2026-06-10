@@ -17,7 +17,7 @@
 
 body{
   background: var(--bg);
-  color: var(--text);
+  color: #002855;
   line-height:1.6;
   scroll-behavior:smooth;
 }
