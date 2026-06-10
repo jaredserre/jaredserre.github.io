@@ -474,3 +474,22 @@ footer{
   border-color:#0a66c2;
   color:#0a66c2;
 }
+
+/* Why Newsrooms Hire Me */
+#why-newsrooms-hire-me,
+.why-newsrooms-hire-me {
+  background: #162033;
+  color: #f5f7fb;
+  padding: 4rem 1.5rem;
+  border-radius: 18px;
+}
+
+#why-newsrooms-hire-me h2,
+.why-newsrooms-hire-me h2 {
+  color: #ffffff;
+}
+
+#why-newsrooms-hire-me p,
+.why-newsrooms-hire-me p {
+  color: #d9e2f1;
+}
