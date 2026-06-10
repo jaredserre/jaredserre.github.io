@@ -249,36 +249,6 @@ section{
   line-height: 1.7;
 }
 
-
-/* SKILLS */
-.skills{
-  display:flex;
-  flex-wrap:wrap;
-  gap:10px;
-}
-
-.skill{
-  padding:10px 14px;
-  background:white;
-  border:1px solid var(--border);
-  border-radius:20px;
-  cursor:pointer;
-  transition:0.3s;
-}
-
-.skill:hover{
-  border-color:var(--red);
-  color:var(--red);
-}
-
-.skill-info{
-  margin-top:20px;
-  padding:15px;
-  border-left:4px solid var(--blue);
-  background:white;
-  display:none;
-}
-
 /* CONTACT */
 .contact-box{
   background:white;
