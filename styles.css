@@ -102,6 +102,7 @@ margin-bottom: 1rem;
 font-size: 4rem;
 line-height: 1.1;
 margin-bottom: 1.5rem;
+color: #002855;
 }
 
 .hero-description {
@@ -456,7 +457,7 @@ footer{
 
 #why-newsrooms-hire-me h2,
 .why-newsrooms-hire-me h2 {
-  text-align: center
+  text-align: center;
   color: #ffffff;
 }
 
