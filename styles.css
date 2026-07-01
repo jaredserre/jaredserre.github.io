@@ -498,133 +498,23 @@ footer{
     margin-bottom:2rem;
 }
 
-.carousel-wrapper{
-    overflow:hidden;
-    width:100%;
-}
-
-.carousel-track{
-    display:flex;
-    gap:24px;
-    transition:transform .45s ease;
-}
-
-.story-card{
-    flex:0 0 calc((100% - 48px) / 3);
-}
-
-.carousel-controls{
-    display:flex;
-    gap:.75rem;
-}
-
-.carousel-btn{
-    width:42px;
-    height:42px;
-    border:none;
-    border-radius:50%;
-    cursor:pointer;
-    font-size:1.2rem;
-    background:#f2f2f2;
-    transition:.2s;
-}
-
-.carousel-btn:hover{
-    background:#ddd;
-}
-
-.carousel-btn:disabled{
-    opacity:.35;
-    cursor:not-allowed;
-}
-
-@media (max-width:900px){
-
-.story-card{
-    flex:0 0 calc((100% - 24px) / 2);
-}
-
-}
-
-@media (max-width:650px){
-
-.story-card{
-    flex:0 0 100%;
-}
-
-/* =========================
-   FEATURED REPORTING — CLEAN GRID
-========================= */
-
-#featured-work .carousel-wrapper {
-  overflow: visible;
-}
-
-#featured-work .carousel-track {
-  display: grid !important;
+.story-grid {
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
-  transform: none !important;
+  margin-top: 20px;
 }
 
-/* CARD */
-#featured-work .story-card {
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  overflow: hidden;
-
-  display: flex;
-  flex-direction: column;
-
-  transition: 0.25s ease;
-}
-
-/* IMAGE (fixes huge photos) */
-#featured-work .story-card img {
-  width: 100%;
-  height: 160px;
-  object-fit: cover;
-  display: block;
-}
-
-/* TITLE */
-#featured-work .story-card h3 {
-  font-size: 16px;
-  line-height: 1.3;
-  margin: 12px 14px 6px;
-}
-
-/* DESCRIPTION */
-#featured-work .story-card p {
-  margin: 0 14px 10px;
-  font-size: 14px;
-  color: var(--muted);
-}
-
-/* LINK */
-#featured-work .story-card a {
-  margin: 0 14px 14px;
-  color: var(--blue);
-  text-decoration: none;
-  font-size: 14px;
-}
-
-/* HOVER */
-#featured-work .story-card:hover {
-  transform: translateY(-4px);
-  border-color: var(--blue);
-}
-
-/* RESPONSIVE */
+/* Tablet */
 @media (max-width: 900px) {
-  #featured-work .carousel-track {
+  .story-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
+/* Mobile */
 @media (max-width: 600px) {
-  #featured-work .carousel-track {
+  .story-grid {
     grid-template-columns: 1fr;
   }
 }
