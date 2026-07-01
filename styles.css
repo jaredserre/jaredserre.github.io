@@ -490,3 +490,59 @@ footer{
 #why-newsrooms-hire-me .value-icon {
   color: #d9e2f1;
 }
+
+.contact-section {
+  margin-top: 4rem;
+  padding: 3rem 2rem;
+  border-radius: 24px;
+  background: #f5f2ec;
+  text-align: center;
+}
+
+.contact-section h2 {
+  margin-bottom: 0.75rem;
+}
+
+.contact-lede {
+  max-width: 620px;
+  margin: 0 auto 1.75rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.contact-actions {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.contact-button {
+  padding: 0.75rem 1rem;
+  border: 1px solid #222;
+  border-radius: 999px;
+  text-decoration: none;
+  color: #222;
+  font-weight: 600;
+}
+
+.contact-button:hover {
+  background: #222;
+  color: #fff;
+}
+
+.contact-button.primary {
+  background: #222;
+  color: #fff;
+}
+
+.contact-button.primary:hover {
+  background: transparent;
+  color: #222;
+}
+
+.contact-note {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+}
