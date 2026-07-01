@@ -552,4 +552,78 @@ footer{
     flex:0 0 100%;
 }
 
+/* =========================
+   FEATURED REPORTING (GRID FIX)
+   overrides carousel behavior
+========================= */
+
+#featured-work .carousel-wrapper {
+  overflow: visible; /* disables clipping */
+}
+
+#featured-work .carousel-track {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  transform: none !important; /* disables JS sliding */
+}
+
+#featured-work .story-card {
+  flex: unset !important;
+  width: auto !important;
+
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  transition: 0.25s ease;
+}
+
+/* FIX BIG IMAGES */
+#featured-work .story-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+}
+
+/* spacing inside card */
+#featured-work .story-card h3 {
+  font-size: 16px;
+  margin: 12px 14px 6px;
+}
+
+#featured-work .story-card p {
+  margin: 0 14px 10px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+#featured-work .story-card a {
+  margin: 0 14px 14px;
+  color: var(--blue);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* hover */
+#featured-work .story-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--blue);
+}
+
+/* responsive */
+@media (max-width: 900px) {
+  #featured-work .carousel-track {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  #featured-work .carousel-track {
+    grid-template-columns: 1fr;
+  }
 }
