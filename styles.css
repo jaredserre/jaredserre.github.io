@@ -518,3 +518,26 @@ footer{
     grid-template-columns: 1fr;
   }
 }
+
+.story-card {
+  position: relative;
+}
+
+.pub-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 6px 8px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.pub-badge img {
+  height: 16px;
+  width: auto;
+  display: block;
+}
